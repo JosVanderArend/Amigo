@@ -147,14 +147,14 @@ components:
       required: false
       description: Gewenste CRS van de coördinaten in de response.
       schema:
-          type: string
+        type: string
         enum:
           - epsg:28992
         default:
           'epsg:28992'
 # Dit is RD, het enige coordinatenstelsel dat het kadaster nu (19-05-2020) kan leveren en daarmee dus de default (ook impliciet indien niet gedefinieerd als default).
 # Toevoegen van enumeratiewaarden leidt niet tot braking changes bij consumers. Wijzigne van de default leidt wel tot breaking changes
- responses:
+  responses:
     '204':
       description: No content
       headers:
